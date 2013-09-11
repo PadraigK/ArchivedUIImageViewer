@@ -18,6 +18,9 @@
 		1AD2FB9917DFE81400439D0D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD2FB7817DFE81400439D0D /* Cocoa.framework */; };
 		1AD2FBA117DFE81400439D0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AD2FB9F17DFE81400439D0D /* InfoPlist.strings */; };
 		1AD2FBA317DFE81400439D0D /* ArchivedUIImageViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD2FBA217DFE81400439D0D /* ArchivedUIImageViewerTests.m */; };
+		1AD2FBAE17DFF1EB00439D0D /* SUPAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD2FBAD17DFF1EB00439D0D /* SUPAppController.m */; };
+		1AD2FBB117DFF23D00439D0D /* SUPArchivedUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD2FBB017DFF23D00439D0D /* SUPArchivedUIImageView.m */; };
+		1AD2FBB417DFF52E00439D0D /* UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD2FBB317DFF52E00439D0D /* UIImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		1AD2FB9E17DFE81400439D0D /* ArchivedUIImageViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArchivedUIImageViewerTests-Info.plist"; sourceTree = "<group>"; };
 		1AD2FBA017DFE81400439D0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AD2FBA217DFE81400439D0D /* ArchivedUIImageViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchivedUIImageViewerTests.m; sourceTree = "<group>"; };
+		1AD2FBAC17DFF1EB00439D0D /* SUPAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPAppController.h; sourceTree = "<group>"; };
+		1AD2FBAD17DFF1EB00439D0D /* SUPAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPAppController.m; sourceTree = "<group>"; };
+		1AD2FBAF17DFF23D00439D0D /* SUPArchivedUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPArchivedUIImageView.h; sourceTree = "<group>"; };
+		1AD2FBB017DFF23D00439D0D /* SUPArchivedUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPArchivedUIImageView.m; sourceTree = "<group>"; };
+		1AD2FBB217DFF52E00439D0D /* UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImage.h; sourceTree = "<group>"; };
+		1AD2FBB317DFF52E00439D0D /* UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +129,12 @@
 				1AD2FB8D17DFE81400439D0D /* MainMenu.xib */,
 				1AD2FB9017DFE81400439D0D /* Images.xcassets */,
 				1AD2FB7F17DFE81400439D0D /* Supporting Files */,
+				1AD2FBAC17DFF1EB00439D0D /* SUPAppController.h */,
+				1AD2FBAD17DFF1EB00439D0D /* SUPAppController.m */,
+				1AD2FBAF17DFF23D00439D0D /* SUPArchivedUIImageView.h */,
+				1AD2FBB017DFF23D00439D0D /* SUPArchivedUIImageView.m */,
+				1AD2FBB217DFF52E00439D0D /* UIImage.h */,
+				1AD2FBB317DFF52E00439D0D /* UIImage.m */,
 			);
 			path = ArchivedUIImageViewer;
 			sourceTree = "<group>";
@@ -254,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD2FB8517DFE81400439D0D /* main.m in Sources */,
+				1AD2FBB117DFF23D00439D0D /* SUPArchivedUIImageView.m in Sources */,
+				1AD2FBB417DFF52E00439D0D /* UIImage.m in Sources */,
+				1AD2FBAE17DFF1EB00439D0D /* SUPAppController.m in Sources */,
 				1AD2FB8C17DFE81400439D0D /* SUPAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArchivedUIImageViewer/ArchivedUIImageViewer-Prefix.pch";
 				INFOPLIST_FILE = "ArchivedUIImageViewer/ArchivedUIImageViewer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,6 +420,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArchivedUIImageViewer/ArchivedUIImageViewer-Prefix.pch";
 				INFOPLIST_FILE = "ArchivedUIImageViewer/ArchivedUIImageViewer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -422,6 +442,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ArchivedUIImageViewerTests/ArchivedUIImageViewerTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -440,6 +461,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArchivedUIImageViewer/ArchivedUIImageViewer-Prefix.pch";
 				INFOPLIST_FILE = "ArchivedUIImageViewerTests/ArchivedUIImageViewerTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
